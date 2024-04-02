@@ -18,6 +18,7 @@ module OmniAuth
       option :name, 'instagram_graph'
 
       option :client_options, {
+        auth_scheme: :request_body,
         site: 'https://api.instagram.com',
         authorize_url: 'https://api.instagram.com/oauth/authorize',
         token_url: 'oauth/access_token',
